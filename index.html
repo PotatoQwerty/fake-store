@@ -9,6 +9,7 @@
       integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
       crossorigin="anonymous"
     />
+
     <title>Store</title>
   </head>
   <body>
@@ -46,26 +47,52 @@
         </div>
       </nav>
     </header>
-    <div class="">
+    <div>
       <main>
-        <div class="row">
-          <img
-            src="images/image1.jpg"
-            alt=""
-            class="col-12 col-sm-6 img-fluid p-0"
-          />
-          <img
-            src="images/image2.jpg"
-            alt=""
-            class="col-12 col-sm-6 img-fluid p-0"
-          />
-          <div class="position-absolute text-white">
-            <h1>Shop this new look</h1>
+        <div class="d-flex w-100 justify-items-center align-items-center">
+          <div class="row">
+            <img
+              src="images/image1.jpg"
+              alt=""
+              class="col-12 col-sm-6 img-fluid p-0 m-0"
+            />
+            <img
+              src="images/image2.jpg"
+              alt=""
+              class="col-12 col-sm-6 img-fluid px-0"
+            />
+            <div class="position-absolute text-white">
+              <h1>Shop this new look</h1>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row my-1 gx-1">
+            <!-- <div class="col">
+              <div class="p-3 border bg-light">Custom column padding</div>
+            </div>
+            <div class="col">
+              <div class="p-3 border bg-light">Custom column padding</div>
+            </div> -->
+            <div>
+              <div
+                class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex flex-column justify-items-center align-items-center bg-light rounded p-2"
+              >
+                <img
+                  src="images/tshirt.jpg"
+                  alt="Product image"
+                  class="img-fluid rounded"
+                />
+                <h5>Casual T-shirt (pack of 6)</h5>
+                <p>Just some casual shirts what could go wrong?</p>
+                <p>20$</p>
+              </div>
+            </div>
           </div>
         </div>
       </main>
     </div>
-    <footer class="container-fluid bg-success-subtle text-bg-primary">
+    <footer class="container-fluid bg-success-subtle text-bg-primary mt-2">
       <div class="row">
         <img
           src="images/logo.png"
@@ -92,4 +119,5 @@
     integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK"
     crossorigin="anonymous"
   ></script>
+  <script src="main.js"></script>
 </html>
