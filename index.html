@@ -35,13 +35,13 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#">Men</a>
+              <a class="nav-link text-white" href="#Men">Men</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#">Women</a>
+              <a class="nav-link text-white" href="#Women">Women</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#">Contact</a>
+              <a class="nav-link text-white" href="#about">Contact</a>
             </li>
           </ul>
         </div>
@@ -49,58 +49,138 @@
     </header>
     <div>
       <main>
-        <div class="d-flex w-100 justify-items-center align-items-center">
-          <div class="row">
-            <img
-              src="images/image1.jpg"
-              alt=""
-              class="col-12 col-sm-6 img-fluid p-0 m-0"
-            />
-            <img
-              src="images/image2.jpg"
-              alt=""
-              class="col-12 col-sm-6 img-fluid px-0"
-            />
-            <div class="position-absolute text-white">
+        <div class="container-fluid p-0 m-0">
+          <div class="row g-0 position-relative">
+            <div class="col-12 col-md-6">
+              <img
+                src="images/image1.jpg"
+                alt=""
+                class="w-100 object-fit-cover"
+                style="height: 100vh"
+              />
+            </div>
+            <div class="col-12 col-md-6">
+              <img
+                src="images/image2.jpg"
+                alt=""
+                class="w-100 object-fit-cover"
+                style="height: 100vh"
+              />
+            </div>
+            <div
+              class="position-absolute top-50 start-50 translate-middle text-white text-center"
+            >
               <h1>Shop this new look</h1>
             </div>
           </div>
         </div>
-        <div class="container">
+
+        <section class="container" id="Men">
+          <div>
+            <h1>Men's clothing</h1>
+          </div>
           <div class="row my-1 gx-1">
-            <!-- <div class="col">
-              <div class="p-3 border bg-light">Custom column padding</div>
-            </div>
-            <div class="col">
-              <div class="p-3 border bg-light">Custom column padding</div>
-            </div> -->
-            <div>
-              <div
-                class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex flex-column justify-items-center align-items-center bg-light rounded p-2"
-              >
-                <img
-                  src="images/tshirt.jpg"
-                  alt="Product image"
-                  class="img-fluid rounded"
-                />
-                <h5>Casual T-shirt (pack of 6)</h5>
-                <p>Just some casual shirts what could go wrong?</p>
-                <p>20$</p>
-              </div>
+            <div
+              class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex flex-column justify-items-center align-items-center bg-light rounded p-2"
+            >
+              <img
+                src="images/tshirt.jpg"
+                alt="Product image"
+                class="img-fluid rounded"
+              />
+              <h5>Casual T-shirt (pack of 6)</h5>
+              <p>Just some casual shirts what could go wrong?</p>
+              <p>20$</p>
             </div>
           </div>
-        </div>
+        </section>
+        <section class="container" id="Women">
+          <div>
+            <h1>Women's clothing</h1>
+          </div>
+          <div class="row my-1 gap-g-1">
+            <div
+              class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex flex-column justify-items-center align-items-center bg-light rounded p-2"
+            >
+              <img
+                src="images/hoodie.jpg"
+                alt="Product image"
+                class="img-fluid rounded"
+              />
+              <h5>Oversized Hoodie long sleeve</h5>
+              <p>
+                Women's oversized hoodies made with soft fleece material, it
+                features a comfortable crew neck, long sleeves with drop
+                shoulders.
+              </p>
+              <p>20$</p>
+            </div>
+            <div
+              class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex flex-column justify-items-center align-items-center bg-light rounded p-2"
+            >
+              <img
+                src="images/hoodie.jpg"
+                alt="Product image"
+                class="img-fluid rounded"
+              />
+              <h5>Oversized Hoodie long sleeve</h5>
+              <p>
+                Women's oversized hoodies made with soft fleece material, it
+                features a comfortable crew neck, long sleeves with drop
+                shoulders.
+              </p>
+              <p>20$</p>
+            </div>
+            <div
+              class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex flex-column justify-items-center align-items-center bg-light rounded p-2"
+            >
+              <img
+                src="images/hoodie.jpg"
+                alt="Product image"
+                class="img-fluid rounded"
+              />
+              <h5>Oversized Hoodie long sleeve</h5>
+              <p>
+                Women's oversized hoodies made with soft fleece material, it
+                features a comfortable crew neck, long sleeves with drop
+                shoulders.
+              </p>
+              <p>20$</p>
+            </div>
+            <div
+              class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex flex-column justify-items-center align-items-center bg-light rounded p-2"
+            >
+              <img
+                src="images/hoodie.jpg"
+                alt="Product image"
+                class="img-fluid rounded"
+              />
+              <h5>Oversized Hoodie long sleeve</h5>
+              <p>
+                Women's oversized hoodies made with soft fleece material, it
+                features a comfortable crew neck, long sleeves with drop
+                shoulders.
+              </p>
+              <p>20$</p>
+            </div>
+          </div>
+        </section>
       </main>
     </div>
-    <footer class="container-fluid bg-success-subtle text-bg-primary mt-2">
-      <div class="row">
+    <footer
+      class="container-fluid bg-success-subtle text-bg-primary mt-2"
+      id="about"
+    >
+      <div class="row d-flex align-items-center justify-content-center">
         <img
           src="images/logo.png"
           alt=""
           style="width: 80px"
-          class="img-fluid col-6"
+          class="img-fluid col-12 col-md-6"
         />
-        <p class="col-6">Eden elegance all rights reserved 2025 ©</p>
+        <p class="col-12 col-md-6 text-center">
+          Eden elegance all rights reserved 2025 ©
+        </p>
       </div>
     </footer>
   </body>
