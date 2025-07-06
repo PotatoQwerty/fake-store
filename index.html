@@ -9,11 +9,12 @@
       integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
       crossorigin="anonymous"
     />
-
-    <title>Store</title>
+    <title>Eden Elegance</title>
   </head>
   <body>
     <header>
+      <!-- here i used a bootstrap navbar with a logo and links to different sections of the page it is also responsive to mobile
+       i also made links to sections of the page -->
       <nav class="navbar navbar-expand-lg navbar-light bg-success-subtle px-4">
         <img src="images/logo.png" alt="" width="50" class="img-fluid" />
         <button
@@ -33,6 +34,7 @@
               <a class="nav-link text-white" href="#"
                 >Home <span class="sr-only">(current)</span></a
               >
+              <!-- used sr-only class to hide the text in screen readers and improve accessibility -->
             </li>
             <li class="nav-item">
               <a class="nav-link text-white" href="#Men">Men</a>
@@ -70,98 +72,390 @@
             <div
               class="position-absolute top-50 start-50 translate-middle text-white text-center"
             >
-              <h1>Shop this new look</h1>
+              <button
+                class="btn btn-success-subtle btn-lg"
+                onclick="location.href='#Men'"
+              >
+                <h1>Explore our new collection</h1>
+              </button>
+              <!-- added this onclick to scroll down to men's section with predifined bootstrap class -->
             </div>
           </div>
         </div>
-
+        <!-- section for men's clothing with cards that show the items -->
         <section class="container" id="Men">
           <div>
-            <h1>Men's clothing</h1>
+            <h1 class="my-4">Men's clothing</h1>
           </div>
-          <div class="row my-1 gx-1">
-            <div
-              class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex flex-column justify-items-center align-items-center bg-light rounded p-2"
-            >
-              <img
-                src="images/tshirt.jpg"
-                alt="Product image"
-                class="img-fluid rounded"
-              />
-              <h5>Casual T-shirt (pack of 6)</h5>
-              <p>Just some casual shirts what could go wrong?</p>
-              <p>20$</p>
+          <div class="row g-4">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+              <div
+                class="d-flex flex-column align-items-center bg-light rounded p-2"
+              >
+                <img
+                  src="images/tshirt.jpg"
+                  alt="Casual t-shirt for men"
+                  class="img-fluid rounded"
+                />
+                <h5 class="py-1">Casual T-shirts (pack of 5)</h5>
+                <p class="text-center">
+                  just some casual t-shirts what could go wrong?
+                </p>
+                <div class="d-flex flex-row align-items-center gap-2">
+                  <p
+                    class="m-0 px-3 py-2 rounded text-white fw-bold"
+                    style="background-color: #afe1af"
+                  >
+                    $20
+                  </p>
+                  <!--haven't used predifined bootstrap button because when using cdn we can't change colors so it wouldn't match the design pallete -->
+                  <button
+                    style="
+                      background-color: #9fe2bf;
+                      border: none;
+                      border-radius: 5px;
+                      padding: 8px 20px;
+                      color: white;
+                      font-weight: bold;
+                    "
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+              <div
+                class="d-flex flex-column align-items-center bg-light rounded p-2"
+              >
+                <img
+                  src="images/tshirt.jpg"
+                  alt="Casual t-shirt for men"
+                  class="img-fluid rounded"
+                />
+                <h5 class="py-1">Casual T-shirts (pack of 5)</h5>
+                <p class="text-center">
+                  just some casual t-shirts what could go wrong?
+                </p>
+                <div class="d-flex flex-row align-items-center gap-2">
+                  <p
+                    class="m-0 px-3 py-2 rounded text-white fw-bold"
+                    style="background-color: #afe1af"
+                  >
+                    $20
+                  </p>
+                  <button
+                    style="
+                      background-color: #9fe2bf;
+                      border: none;
+                      border-radius: 5px;
+                      padding: 8px 20px;
+                      color: white;
+                      font-weight: bold;
+                    "
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+              <div
+                class="d-flex flex-column align-items-center bg-light rounded p-2"
+              >
+                <img
+                  src="images/tshirt.jpg"
+                  alt="Casual t-shirt for men"
+                  class="img-fluid rounded"
+                />
+                <h5 class="py-1">Casual T-shirts (pack of 5)</h5>
+                <p class="text-center">
+                  just some casual t-shirts what could go wrong?
+                </p>
+                <div class="d-flex flex-row align-items-center gap-2">
+                  <p
+                    class="m-0 px-3 py-2 rounded text-white fw-bold"
+                    style="background-color: #afe1af"
+                  >
+                    $20
+                  </p>
+                  <button
+                    style="
+                      background-color: #9fe2bf;
+                      border: none;
+                      border-radius: 5px;
+                      padding: 8px 20px;
+                      color: white;
+                      font-weight: bold;
+                    "
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+              <div
+                class="d-flex flex-column align-items-center bg-light rounded p-2"
+              >
+                <img
+                  src="images/tshirt.jpg"
+                  alt="Casual t-shirt for men"
+                  class="img-fluid rounded"
+                />
+                <h5 class="py-1">Casual T-shirts (pack of 5)</h5>
+                <p class="text-center">
+                  just some casual t-shirts what could go wrong?
+                </p>
+                <div class="d-flex flex-row align-items-center gap-2">
+                  <p
+                    class="m-0 px-3 py-2 rounded text-white fw-bold"
+                    style="background-color: #afe1af"
+                  >
+                    $20
+                  </p>
+                  <button
+                    style="
+                      background-color: #9fe2bf;
+                      border: none;
+                      border-radius: 5px;
+                      padding: 8px 20px;
+                      color: white;
+                      font-weight: bold;
+                    "
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+              <div
+                class="d-flex flex-column align-items-center bg-light rounded p-2"
+              >
+                <img
+                  src="images/tshirt.jpg"
+                  alt="Casual t-shirt for men"
+                  class="img-fluid rounded"
+                />
+                <h5 class="py-1">Casual T-shirts (pack of 5)</h5>
+                <p class="text-center">
+                  just some casual t-shirts what could go wrong?
+                </p>
+                <div class="d-flex flex-row align-items-center gap-2">
+                  <p
+                    class="m-0 px-3 py-2 rounded text-white fw-bold"
+                    style="background-color: #afe1af"
+                  >
+                    $20
+                  </p>
+                  <button
+                    style="
+                      background-color: #9fe2bf;
+                      border: none;
+                      border-radius: 5px;
+                      padding: 8px 20px;
+                      color: white;
+                      font-weight: bold;
+                    "
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         </section>
+        <!-- section for women's clothing same structure for men's clothing -->
         <section class="container" id="Women">
           <div>
-            <h1>Women's clothing</h1>
+            <h1 class="my-4">Women's clothing</h1>
           </div>
-          <div class="row my-1 gap-g-1">
-            <div
-              class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex flex-column justify-items-center align-items-center bg-light rounded p-2"
-            >
-              <img
-                src="images/hoodie.jpg"
-                alt="Product image"
-                class="img-fluid rounded"
-              />
-              <h5>Oversized Hoodie long sleeve</h5>
-              <p>
-                Women's oversized hoodies made with soft fleece material, it
-                features a comfortable crew neck, long sleeves with drop
-                shoulders.
-              </p>
-              <p>20$</p>
+          <div class="row g-4">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+              <div
+                class="d-flex flex-column align-items-center bg-light rounded p-2"
+              >
+                <img
+                  src="images/hoodie.jpg"
+                  alt="Oversized women's hoodie"
+                  class="img-fluid rounded"
+                />
+                <h5 class="py-1">Oversized Hoodie long sleeve</h5>
+                <p class="text-center">
+                  Women's oversized hoodies made with soft fleece material, it
+                  features a comfortable crew neck, long sleeves with drop
+                  shoulders.
+                </p>
+                <div class="d-flex flex-row align-items-center gap-2">
+                  <p
+                    class="m-0 px-3 py-2 rounded text-white fw-bold"
+                    style="background-color: #afe1af"
+                  >
+                    $20
+                  </p>
+                  <button
+                    style="
+                      background-color: #9fe2bf;
+                      border: none;
+                      border-radius: 5px;
+                      padding: 8px 20px;
+                      color: white;
+                      font-weight: bold;
+                    "
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
             </div>
-            <div
-              class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex flex-column justify-items-center align-items-center bg-light rounded p-2"
-            >
-              <img
-                src="images/hoodie.jpg"
-                alt="Product image"
-                class="img-fluid rounded"
-              />
-              <h5>Oversized Hoodie long sleeve</h5>
-              <p>
-                Women's oversized hoodies made with soft fleece material, it
-                features a comfortable crew neck, long sleeves with drop
-                shoulders.
-              </p>
-              <p>20$</p>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+              <div
+                class="d-flex flex-column align-items-center bg-light rounded p-2"
+              >
+                <img
+                  src="images/hoodie.jpg"
+                  alt="Oversized women's hoodie"
+                  class="img-fluid rounded"
+                />
+                <h5 class="py-1">Oversized Hoodie long sleeve</h5>
+                <p class="text-center">
+                  Women's oversized hoodies made with soft fleece material, it
+                  features a comfortable crew neck, long sleeves with drop
+                  shoulders.
+                </p>
+                <div class="d-flex flex-row align-items-center gap-2">
+                  <p
+                    class="m-0 px-3 py-2 rounded text-white fw-bold"
+                    style="background-color: #afe1af"
+                  >
+                    $20
+                  </p>
+                  <button
+                    style="
+                      background-color: #9fe2bf;
+                      border: none;
+                      border-radius: 5px;
+                      padding: 8px 20px;
+                      color: white;
+                      font-weight: bold;
+                    "
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
             </div>
-            <div
-              class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex flex-column justify-items-center align-items-center bg-light rounded p-2"
-            >
-              <img
-                src="images/hoodie.jpg"
-                alt="Product image"
-                class="img-fluid rounded"
-              />
-              <h5>Oversized Hoodie long sleeve</h5>
-              <p>
-                Women's oversized hoodies made with soft fleece material, it
-                features a comfortable crew neck, long sleeves with drop
-                shoulders.
-              </p>
-              <p>20$</p>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+              <div
+                class="d-flex flex-column align-items-center bg-light rounded p-2"
+              >
+                <img
+                  src="images/hoodie.jpg"
+                  alt="Oversized women's hoodie"
+                  class="img-fluid rounded"
+                />
+                <h5 class="py-1">Oversized Hoodie long sleeve</h5>
+                <p class="text-center">
+                  Women's oversized hoodies made with soft fleece material, it
+                  features a comfortable crew neck, long sleeves with drop
+                  shoulders.
+                </p>
+                <div class="d-flex flex-row align-items-center gap-2">
+                  <p
+                    class="m-0 px-3 py-2 rounded text-white fw-bold"
+                    style="background-color: #afe1af"
+                  >
+                    $20
+                  </p>
+                  <button
+                    style="
+                      background-color: #9fe2bf;
+                      border: none;
+                      border-radius: 5px;
+                      padding: 8px 20px;
+                      color: white;
+                      font-weight: bold;
+                    "
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
             </div>
-            <div
-              class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex flex-column justify-items-center align-items-center bg-light rounded p-2"
-            >
-              <img
-                src="images/hoodie.jpg"
-                alt="Product image"
-                class="img-fluid rounded"
-              />
-              <h5>Oversized Hoodie long sleeve</h5>
-              <p>
-                Women's oversized hoodies made with soft fleece material, it
-                features a comfortable crew neck, long sleeves with drop
-                shoulders.
-              </p>
-              <p>20$</p>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+              <div
+                class="d-flex flex-column align-items-center bg-light rounded p-2"
+              >
+                <img
+                  src="images/hoodie.jpg"
+                  alt="Oversized women's hoodie"
+                  class="img-fluid rounded"
+                />
+                <h5 class="py-1">Oversized Hoodie long sleeve</h5>
+                <p class="text-center">
+                  Women's oversized hoodies made with soft fleece material, it
+                  features a comfortable crew neck, long sleeves with drop
+                  shoulders.
+                </p>
+                <div class="d-flex flex-row align-items-center gap-2">
+                  <p
+                    class="m-0 px-3 py-2 rounded text-white fw-bold"
+                    style="background-color: #afe1af"
+                  >
+                    $20
+                  </p>
+                  <button
+                    style="
+                      background-color: #9fe2bf;
+                      border: none;
+                      border-radius: 5px;
+                      padding: 8px 20px;
+                      color: white;
+                      font-weight: bold;
+                    "
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+              <div
+                class="d-flex flex-column align-items-center bg-light rounded p-2"
+              >
+                <img
+                  src="images/hoodie.jpg"
+                  alt="Oversized women's hoodie"
+                  class="img-fluid rounded"
+                />
+                <h5 class="py-1">Oversized Hoodie long sleeve</h5>
+                <p class="text-center">
+                  Women's oversized hoodies made with soft fleece material, it
+                  features a comfortable crew neck, long sleeves with drop
+                  shoulders.
+                </p>
+                <div class="d-flex flex-row align-items-center gap-2">
+                  <p
+                    class="m-0 px-3 py-2 rounded text-white fw-bold"
+                    style="background-color: #afe1af"
+                  >
+                    $20
+                  </p>
+                  <button
+                    style="
+                      background-color: #9fe2bf;
+                      border: none;
+                      border-radius: 5px;
+                      padding: 8px 20px;
+                      color: white;
+                      font-weight: bold;
+                    "
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -178,7 +472,7 @@
           style="width: 80px"
           class="img-fluid col-12 col-md-6"
         />
-        <p class="col-12 col-md-6 text-center">
+        <p class="col-12 col-md-6 text-center m-0">
           Eden elegance all rights reserved 2025 ©
         </p>
       </div>
